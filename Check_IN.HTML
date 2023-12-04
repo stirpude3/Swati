@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wagharanya Jungle Resort - Forest Stay Permit Application</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .disclaimer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wagharanya Jungle Resort - Forest Stay Permit Application</h1>
+
+    <p>Welcome to Wagharanya Jungle Resort, an enclave of tranquility amidst the majestic wilderness. Before you embark on your jungle adventure, kindly complete the following form adhering to the guidelines set forth by the Indian Forest Department.</p>
+
+    <form>
+        <h2>Personal Information:</h2>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <!-- ... (other personal information fields) ... -->
+
+        <h2>Contact Information:</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+        <h2>Address:</h2>
+        <label for="streetAddress">Street Address:</label>
+        <input type="text" id="streetAddress" name="streetAddress" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="zipCode">Zip Code:</label>
+        <input type="text" id="zipCode" name="zipCode" required>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+
+        <h2>Emergency Contact:</h2>
+        <label for="emergencyContactName">Name:</label>
+        <input type="text" id="emergencyContactName" name="emergencyContactName" required>
+
+        <label for="relationship">Relationship:</label>
+        <input type="text" id="relationship" name="relationship" required>
+
+        <label for="emergencyPhoneNumber">Phone Number:</label>
+        <input type="tel" id="emergencyPhoneNumber" name="emergencyPhoneNumber" required>
+
+        <h2>Guest Information:</h2>
+        <label for="numberOfAdults">Number of Adults:</label>
+        <input type="number" id="numberOfAdults" name="numberOfAdults" required>
+
+        <label for="numberOfChildren">Number of Children:</label>
+        <input type="number" id="numberOfChildren" name="numberOfChildren" required>
+
+        <label for="childrenAgeRange">Age Range(s) of Children:</label>
+        <input type="text" id="childrenAgeRange" name="childrenAgeRange">
+
+        <h2>Any Pets Traveling with You?</h2>
+        <label for="petsTravelingYes">Yes<input type="radio" id="petsTravelingYes" name="petsTraveling" value="yes"></label>
+        <label for="petsTravelingNo">No<input type="radio" id="petsTravelingNo" name="petsTraveling" value="no"></label>
+
+        <label for="petsDetails">If yes, please specify:</label>
+        <input type="text" id="petsDetails" name="petsDetails">
+
+        <h2>Terms and Conditions:</h2>
+        <p>I, the undersigned, hereby acknowledge that my stay at Wagharanya Jungle Resort is subject to the rules and regulations stipulated by the Indian Forest Department. I understand and agree to abide by these regulations, including but not limited to wildlife conservation, noise restrictions, and waste disposal guidelines.</p>
+
+        <div class="disclaimer">
+            <p><strong>Disclaimer:</strong> Wagharanya Jungle Resort shall not be held responsible for the safety and security of the guests, their family members, friends, near and dear ones, and pets during their stay. Visitors are advised to take necessary precautions and adhere to forest guidelines for their own safety.</p>
+        </div>
+
+        <label for="signature">Signature:</label>
+        <input type="text" id="signature" name="signature" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p>Thank you for choosing Wagharanya Jungle Resort. We wish you an enriching experience surrounded by the untamed beauty of nature. If you have any questions or need assistance, please contact our staff who will be happy to assist you.</p>
+</body>
+</html>

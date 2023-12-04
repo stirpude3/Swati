@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wagharanya Resort Customer Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: Khaki;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #8B4513; /* SaddleBrown */
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select, textarea, input {
+            width: calc(100% - 10px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .submit-message {
+            font-size: 16px;
+            color: green;
+            margin-top: 10px;
+        }
+
+        button.download {
+            margin-top: 20px;
+            background-color: #3498db;
+        }
+
+        button.download:hover {
+            background-color: #2980b9;
+        }
+
+        /* Flex container for grouping related fields */
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* Style for flex items within the container */
+        .flex-item {
+            flex: 1 0 calc(33.333% - 10px); /* Three items per row with 10px gap */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Wagharanya Resort Customer Feedback Form</h1>
+
+    <form id="feedbackForm">
+        <!-- Personal Information -->
+        <div class="flex-container">
+            <div class="flex-item">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="flex-item">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="flex-item">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+        </div>
+
+        <!-- 1. Overall Experience -->
+        <label for="overallExperience">Overall Experience (1-10):</label>
+        <input type="number" id="overallExperience" name="overallExperience" min="1" max="10">
+
+        <!-- 2. Accommodation -->
+        <div class="flex-container">
+            <div class="flex-item">
+                <label for="roomCleanliness">Room Cleanliness:</label>
+                <select id="roomCleanliness" name="roomCleanliness">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+
+            <div class="flex-item">
+                <label for="roomComfort">Room Comfort:</label>
+                <select id="roomComfort" name="roomComfort">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+
+            <div class="flex-item">
+                <label for="housekeepingService">Housekeeping Service:</label>
+                <select id="housekeepingService" name="housekeepingService">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 3. Facilities and Amenities -->
+        <div class="flex-container">
+            <div class="flex-item">
+                <label for="poolArea">Pool Area:</label>
+                <select id="poolArea" name="poolArea">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+
+            <div class="flex-item">
+                <label for="fitnessCenter">Fitness Center:</label>
+                <select id="fitnessCenter" name="fitnessCenter">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+
+            <div class="flex-item">
+                <label for="spaServices">Spa Services:</label>
+                <select id="spaServices" name="spaServices">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 4. Customer Service -->
+        <div class="flex-container">
+            <div class="flex-item">
+                <label for="frontDesk">Front Desk:</label>
+                <select id="frontDesk" name="frontDesk">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+
+            <div class="flex-item">
+                <label for="restaurantService">Restaurant Service:</label>
+                <select id="restaurantService" name="restaurantService">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+
+            <div class="flex-item">
+                <label for="conciergeAssistance">Concierge Assistance:</label>
+                <select id="conciergeAssistance" name="conciergeAssistance">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 5. Dining Experience -->
+        <div class="flex-container">
+            <div class="flex-item">
+                <label for="qualityOfFood">Quality of Food:</label>
+                <select id="qualityOfFood" name="qualityOfFood">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+
+            <div class="flex-item">
+                <label for="varietyOfOptions">Variety of Options:</label>
+                <select id="varietyOfOptions" name="varietyOfOptions">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+
+            <div class="flex-item">
+                <label for="roomService">Room Service (if applicable):</label>
+                <select id="roomService" name="roomService">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 6. Cleanliness and Maintenance -->
+        <div class="flex-container">
+            <div class="flex-item">
+                <label for="grounds">Grounds:</label>
+                <select id="grounds" name="grounds">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+
+            <div class="flex-item">
+                <label for="commonAreas">Common Areas:</label>
+                <select id="commonAreas" name="commonAreas">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+
+            <div class="flex-item">
+                <label for="restrooms">Restrooms:</label>
+                <select id="restrooms" name="restrooms">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 7. Additional Comments -->
+        <label for="additionalComments">Additional Comments:</label>
+        <textarea id="additionalComments" name="additionalComments"></textarea>
+
+        <!-- 8. Likelihood to Recommend -->
+        <label for="likelihoodToRecommend">Likelihood to Recommend (0-10):</label>
+        <input type="number" id="likelihoodToRecommend" name="likelihoodToRecommend" min="0" max="10">
+
+        <button type="button" onclick="submitForm()">Submit</button>
+
+        <div class="submit-message" id="submitMessage"></div>
+        <button class="download" type="button" onclick="downloadCSV()">Download CSV</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            // Get form data
+            const formData = new FormData(document.getElementById('feedbackForm'));
+
+            // Convert form data to CSV
+            let csv = 'Field,Value\n';
+            formData.forEach((value, key) => {
+                csv += key + ',' + value + '\n';
+            });
+
+            // Create a Blob and download the CSV file
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'wagharanya_resort_feedback.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+            // Display submit message
+            document.getElementById('submitMessage').innerText = 'Your feedback is invaluable. The input will help us improve our service. Thank You!';
+        }
+
+        function downloadCSV() {
+            // Simulate a click on the existing Download CSV button
+            const downloadButton = document.createElement('a');
+            downloadButton.href = URL.createObjectURL(new Blob(['Field,Value\n'], { type: 'text/csv' }));
+            downloadButton.download = 'wagharanya_resort_feedback.csv';
+            document.body.appendChild(downloadButton);
+            downloadButton.click();
+            document.body.removeChild(downloadButton);
+        }
+    </script>
+
+</body>
+</html>
